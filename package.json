@@ -1,6 +1,19 @@
 {
   "dependencies": {
-    "@tailwindcss/vite": "^4.0.3",
+    "@tailwindcss/vite": "^4.0.3"
+  },
+  "name": "ai_extension",
+  "version": "1.0.0",
+  "main": "options.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "tailwindcss"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
     "tailwindcss": "^4.0.3"
   }
 }
