@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Website Summarizer",
+    "version": "1.0",
+    "description": "A Chrome extension that summarizes websites and stores them for later viewing.",
+    "permissions": [
+        "activeTab",
+        "storage",
+        "tabs",
+        "contextMenus",
+        "scripting"
+    ],
+    "default_popup": "popup.html",
+    "host_permissions": ["<all_urls>"],
+
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "48": "images/Web.png"
+        }
+    },
+    "options_page": "options.html",
+    "icons": {
+        "48": "images/Web.png"
+    }
+}
