@@ -1,14 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quick Research Assistant</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>Floating Options</title>
+
+  <!-- Bootstrap CSS (optional, but used for reset & fonts) -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+  >
+
+  <style>
+    /* Make the popup a bit bigger so buttons don't feel cramped */
+    body {
+      margin: 0;
+      padding: 16px;
+      width: 320px;
+      min-height: 250px;
+      /* Optional: If you want a transparent popup, 
+         you can set background: transparent; 
+         but typically extension popups are opaque. */
+      background: #ffffff;
+    }
+
+    /* Pill-like buttons that appear to float */
+    .option-btn {
+      border-radius: 30px;
+      background-color: #f7f7f7;
+      border: none;
+      width: 100%;
+      text-align: left;
+      padding: 10px 15px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+      box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+      transition: background-color 0.2s ease;
+    }
+
+    .option-btn:hover {
+      background-color: #e9ecef;
+    }
+
+    /* SVG icon styling */
+    .option-btn svg {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+      fill: currentColor;
+    }
+  </style>
 </head>
 <body>
-    <h1 class="bg-yellow-600 h-5 text-2xl font-bold text-blue-500">Hello, World!</h1>
-    <script src="popup.js"></script>
+  <!-- First Option -->
+  <button type="button" class="option-btn">
+    <!-- Placeholder SVG icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+      <path 
+        d="M8.354 1.146a.5.5 0 0 0-.708 0
+           l-6.5 6.5A.5.5 0 0 0 1.5 8h13
+           a.5.5 0 0 0 .354-.854l-6.5-6.5z
+           M1.5 9a.5.5 0 0 0-.354.854
+           l6.5 6.5a.5.5 0 0 0 .708 0
+           l6.5-6.5A.5.5 0 0 0 14.5 9h-13z" />
+    </svg>
+    Summarize Page
+  </button>
+
+  <!-- Second Option -->
+  <button type="button" class="option-btn">
+    <!-- Placeholder SVG icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+      <path 
+        d="M8 2a5 5 0 0 0-3.95 8.032
+           .5.5 0 0 1-.404.956A6 6 0 1 1 14 8
+           a.5.5 0 0 1-1 0A5 5 0 0 0 8 2z" 
+      />
+      <path 
+        d="M7.5 5.5a.5.5 0 0 1 1 0
+           V8a.5.5 0 0 1-1 0V5.5z" 
+      />
+      <path 
+        d="M7.75 8.5a.75.75 0 1 1 0 1.5
+           .75.75 0 0 1 0-1.5z" 
+      />
+    </svg>
+    Summarize and Save
+  </button>
+
+  <!-- Third Option -->
+  <button type="button" class="option-btn">
+    <!-- Placeholder SVG icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+      <path 
+        d="M9.5 2a.5.5 0 0 1 .5.5V3h.5
+           A1.5 1.5 0 0 1 12 4.5v7A1.5 1.5 0 0 1
+           10.5 13h-5A1.5 1.5 0 0 1 4 11.5v-7A1.5
+           1.5 0 0 1 5.5 3H6v-.5a.5.5 0 0 1 1 0
+           V3h2V2.5a.5.5 0 0 1 .5-.5zm-4 2h5
+           A.5.5 0 0 1 11 4.5v1h-6v-1a.5.5 0 0 1
+           .5-.5zm-.5 2.5v4.5a.5.5 0 0 0 .5.5h5
+           a.5.5 0 0 0 .5-.5v-4.5h-6z" 
+      />
+    </svg>
+    Options
+  </button>
+
+  <!-- Bootstrap JavaScript (not strictly necessary here) -->
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+  </script>
 </body>
 </html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Configure API Endpoints</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="options.js" defer></script>
+  </head>
+  <body class="m-0 p-0">
+    <!-- Semi-transparent grey background -->
+    <div
+      class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+      style="background-color: rgba(128, 128, 128, 0.6)"
+    >
+      <!-- Floating panel -->
+      
+      <div
+        class="bg-white p-3 rounded shadow"
+        style="max-width: 600px; width: 90%"
+      >
+      <h1 class="text-md cetner">Configure API Endpoints</h1>
+        <div class="mb-3">
+          <label for="apiEndpoint" class="form-label"
+            >API Endpoint</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="apiEndpoint"
+            placeholder="Eenter API Endpoint"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="apiKey" class="form-label"
+            >API Key</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="apiKey"
+            placeholder="Enter API Key"
+          />
+        </div>
+        <div class="d-flex justify-content-end">
+          <button class="btn btn-primary" type="button" id="saveButton">
+            Save
+          </button>
+        </div>
+        <p id="status" class="ms-2 text-success"></p>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    </script>
+  </body>
+</html>
