@@ -17,10 +17,8 @@
       padding: 16px;
       width: 320px;
       min-height: 250px;
-      /* Optional: If you want a transparent popup, 
-         you can set background: transparent; 
-         but typically extension popups are opaque. */
       background: #ffffff;
+      border-radius: 15px;
     }
 
     /* Pill-like buttons that appear to float */
@@ -53,7 +51,7 @@
 </head>
 <body>
   <!-- First Option -->
-  <button type="button" class="option-btn">
+  <button id="tab-summarize"  type="button" class="option-btn">
     <!-- Placeholder SVG icon -->
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
       <path 
@@ -68,7 +66,7 @@
   </button>
 
   <!-- Second Option -->
-  <button type="button" class="option-btn">
+  <button id="tab-summarizeAndSave" type="button" class="option-btn">
     <!-- Placeholder SVG icon -->
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
       <path 
@@ -89,7 +87,7 @@
   </button>
 
   <!-- Third Option -->
-  <button type="button" class="option-btn">
+  <button id="tab-openOptions" type="button" class="option-btn">
     <!-- Placeholder SVG icon -->
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
       <path 
@@ -110,5 +108,6 @@
   <script 
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
   </script>
+  <script src="popup.js"></script>
 </body>
 </html>
