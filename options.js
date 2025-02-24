@@ -20,11 +20,13 @@ document.getElementById('saveButton').addEventListener('click', () => {
 });
 
 
-// Restore settings from chrome.storage.sync
+// Restores select box and checkbox state using the preferences
 
-document.addEventListener('DOMContentLoaded', () => {
-    chrome.storage.sync.get(['apiEndpoint, apiKey'], (result) => {
-        document.getElementById('apiEndpoint').value = result.apiEndpoint || '';
-        document.getElementById('apiKey').value = result.apiKey || '';
+window.onload = () => {
+    chrome.storage.sync.get(['apiEndpoint', 'apiKey'], (data) => {
+
+        
+        document.getElementById('apiEndpoint').value = data.apiEndpoint || '';
+        document.getElementById('apiKey').value = data.apiKey || '';
     });
-});
+}

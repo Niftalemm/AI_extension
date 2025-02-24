@@ -19,6 +19,22 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         tab.forEach((t) => t.classList.remove('active'));
+        tabs.forEach((t) => t.classList.remove('bg-gray-200'));
+        contents.forEach((c) => c.classList.add('hidden'));
+    }
+
+    function showProcessIndicator(targetElementId) {
+        const targetElement = document.getElementById(targetElementId);
+        console.log('Clicked:',targetElement);
+        if (!targetElement) {
+            console.error('No target element found');
+            return;
+        }
+        targetElement.innerHTML = 
+        '<div class="flex justify-center items-center h-full"><div class="loader"></div></div>';
+        
     }
 
 });
+
+
