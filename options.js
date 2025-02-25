@@ -25,7 +25,6 @@ document.getElementById('saveButton').addEventListener('click', () => {
 window.onload = () => {
     chrome.storage.sync.get(['apiEndpoint', 'apiKey'], (data) => {
 
-        
         document.getElementById('apiEndpoint').value = data.apiEndpoint || '';
         document.getElementById('apiKey').value = data.apiKey || '';
     });
