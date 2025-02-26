@@ -136,12 +136,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Simulate an API request with setTimeout (replace this with your real API call)
-    // setTimeout(() => {
-    //   // Simulated API response
-    //   const response = "API response for action: " + action + " (target element: " + targetElementId + ")";
-    //   // Update the content div with the response
-    //   targetElement.innerHTML = response;
-    //   isApiInitialized = false; // reset to allow future calls
-    // }, 1500);
+    setTimeout(() => {
+      // Simulated API response
+      const response = "API response for action: " + action + "<br>More details here..." + '<a href="https://www.notion.so/web-summaries-18fbf8ec2ceb8088afeec5339d857647">Click here</a>';
+      // Update the content div with the response
+      targetElement.innerHTML = response;
+      isApiInitialized = false; // reset to allow future calls
+    }, 1500);
   }
 });
