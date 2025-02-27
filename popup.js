@@ -142,6 +142,6 @@ document.addEventListener('DOMContentLoaded', function() {
       // Update the content div with the response
       targetElement.innerHTML = response;
       isApiInitialized = false; // reset to allow future calls
-    }, 1500);
+    }, 2100);
   }
 });
