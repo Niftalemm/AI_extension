@@ -1,6 +1,3 @@
-Here is the README.md content for your AI Extension project:
-
----
 
 # 🚀 AI Extension 🌐
 
@@ -42,7 +39,7 @@ The extension uses Latenode for handling webhooks and API interactions. This all
 
 ## 🌟 Try It Out
 
-Want to give it a shot? You can get your own API key and endpoint to see the magic in action. Simply follow the instructions in the extension to set up your credentials and start summarizing!
+Want to give it a shot? You can get your own API key and you can contact me to ge the API Endpoint, which is setup in Latenode to see the magic in action. Simply follow the instructions in the extension to set up your credentials and start summarizing!
 
 ## 📜 License
 
@@ -50,7 +47,7 @@ This project is licensed under the MIT License.
 
 ## 📬 Contact
 
-For any inquiries or feedback, feel free to reach out to [Niftalemm](https://github.com/Niftalemm).
+For any inquiries or feedback, feel free to reach out to [my email](www.mekashaniftalem@gmail.com).
 
 ---
 
