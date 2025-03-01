@@ -1,7 +1,7 @@
 
 # 🚀 AI Extension 🌐
 
-Welcome to the **AI Extension** project! This Chrome extension leverages AI to summarize the contents of a webpage, making it perfect for your classes. 📚✨
+Welcome to the **AI Extension** project! This Chrome extension leverages AI to summarize the contents of a webpage, making it perfect for your classes.  📚✨
 
 ## 📖 Description
 
